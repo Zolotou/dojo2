@@ -7,7 +7,33 @@
     <title>User Login</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <form class="required">
+            <label for="nameUser" class="userLabel">Name of the user:</label>
+            <input required type="text" id="nameUser" name="nameUser" placeholder="Name">
+            <label for="passwordUser" class="passwordLabel">Password of the user:</label>
+            <input required type="password" id="passwordUser" name="passwordUser" placeholder="Password">
+            <input type="sumbit" value="Sumbit">
+        </form>
+        <div class="second-field">
+            <form class="non-required">
+                <label class="birthUserLabel" for="birthUser">Add your birthday:</label>
+                <input type="number" id="birthUser" name="birthUser" placeholder="birthday Date">
+                <label class="phoneUserLabel" for="phonehUser">Add your phone:</label>
+                <input type="tel" id="phoneUser" name="phonehUser" placeholder="Telephone">
+                <label for="fileUser">Choose picture for user:</label>
+                <input type="file" onchange="showFile(this)" id="fileUser" value="Picture">
+            </form>
+        </div>
+        <div class="userCard">
+            <ul>
+                <li class="userCard-name"></li>
+                <li class="userCard-birthday"></li>
+                <li class="usercard-phone"></li>
+            </ul>
+            <div class="userPhoto"></div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

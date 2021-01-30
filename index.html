@@ -13,18 +13,17 @@
             <input required type="text" id="nameUser" name="nameUser" placeholder="Name">
             <label for="passwordUser" class="passwordLabel">Password of the user:</label>
             <input required type="password" id="passwordUser" name="passwordUser" placeholder="Password">
+            <div class="second-field">
+                    <label class="birthUserLabel" for="birthUser">Add your birthday:</label>
+                    <input type="number" id="birthUser" name="birthUser" placeholder="birthday Date">
+                    <label class="phoneUserLabel" for="phonehUser">Add your phone:</label>
+                    <input type="tel" id="phoneUser" name="phonehUser" placeholder="Telephone">
+                    <label for="fileUser">Choose picture for user:</label>
+                    <input type="file" onchange="showFile(this)" id="fileUser" value="Picture">
+            </div>
             <input type="button" value="Sumbit">
         </form>
-        <div class="second-field">
-            <form class="non-required">
-                <label class="birthUserLabel" for="birthUser">Add your birthday:</label>
-                <input type="number" id="birthUser" name="birthUser" placeholder="birthday Date">
-                <label class="phoneUserLabel" for="phonehUser">Add your phone:</label>
-                <input type="tel" id="phoneUser" name="phonehUser" placeholder="Telephone">
-                <label for="fileUser">Choose picture for user:</label>
-                <input type="file" onchange="showFile(this)" id="fileUser" value="Picture">
-            </form>
-        </div>
+
         <div class="userCard">
             <ul>
                 <li class="userCard-name"></li>
